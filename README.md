@@ -31,7 +31,7 @@ Random Forest Classification report
      FALSE POSITIVE  0.97      1.00      0.98       876
       accuracy                           0.89      1748
      macro avg       0.87      0.86      0.86      1748
-  weighted avg       0.89      0.89      0.89      1748
+     weighted avg    0.89      0.89      0.89      1748
 
 -----------------------------------------------------------------------------------------
 
@@ -78,5 +78,5 @@ SVM Classification Report
      FALSE POSITIVE  0.98      1.00      0.99       876
       accuracy                           0.89      1748
      macro avg       0.86      0.85      0.85      1748
-  weighted avg       0.89      0.89      0.88      1748
+     weighted avg    0.89      0.89      0.88      1748
 
