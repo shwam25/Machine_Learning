@@ -12,7 +12,7 @@ Random Forest Classifier Method fits the model best and scores the best Accuracy
 
 Process
 ----------
-Data Cleaning and Pre-Processing: Data was read in from a exoplanet csv file. Null columns and null rows were dropped. Columns available to select as features to train the model on - "koi disposition." With X and y values set, split the data into training and testing sets using train_test_split with stratify=y to ensure that there was an even distribution of classification values in both data sets. Then, MinMaxScaler is used to scale both sets of X data.
+Data Cleaning and Pre-Processing: Data was read in from the exoplanet csv file. Null columns and null rows were dropped. Columns available to select as features to train the model on - "koi disposition." With X and y values set, split the data into training and testing sets using train_test_split with stratify=y to ensure that there was an even distribution of classification values in both data sets. Then, MinMaxScaler is used to scale both sets of X data.
 
 This process was used for all four models, mentioned below.
 
@@ -41,7 +41,8 @@ Random Forest Classification report
      weighted avg    0.89      0.89      0.89      1748
 
 -------------------------------------------------------------------------------------------------------------------------------------------
-Logistic Regression Score:
+Logistic Regression Score
+----------------------------
 Initialize the model using LogisticRegression() and fit the model using the training data. Then score the model using both the training and testing data. Both sets scored fairly well, with the training data at 84.11% and the testing data at 84.09%.
 
 Training Data Score: 0.8411214953271028
@@ -50,6 +51,9 @@ Testing Data Score: 0.8409610983981693
 GridSearchCV is then used to further tune the parameters to create a better scoring model. The parameters were set to explore different C values using both L1 and L2 penalties as regularization methods. Then fit a new model using this grid and found the best parameters, before predicting on the test data. This new model's score was 88.00%.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
+
+KNN Score
+-------------
 
 KNN Score without Gridsearch
 
